@@ -6,7 +6,7 @@ import re
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 
-from search_position import article_possition
+from search_position import article_position
 
 # Load environment variables from .env file
 load_dotenv()
@@ -49,7 +49,7 @@ async def cmd_start(message):
 async def cmd_search(message, command):
     """
         This function handles the '/search' command. It extracts an article number and a search string from the user's command,
-        then calls the 'article_possition' function to find the position of the article in a list of articles containing the search string.
+        then calls the 'article_position' function to find the position of the article in a list of articles containing the search string.
         If the article is found, it sends a message with the position. If not, it sends an error message.
 
         Parameters:
@@ -70,7 +70,7 @@ async def cmd_search(message, command):
         article = int(match.group(1))
         search_string = match.group(2)
 
-        position = article_possition(search_string, article)
+        position = article_position(search_string, article)
 
         if position is None:
             await message.answer("Error! Unable to find the article")

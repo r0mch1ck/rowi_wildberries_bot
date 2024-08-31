@@ -5,7 +5,9 @@ from urllib.parse import quote
 def search_request(string):
     encoded_query = quote(string)
 
-    url = f"https://search.wb.ru/exactmatch/ru/common/v7/search?ab_testing=false&appType=1&curr=rub&dest=-1257786&page=1&query={encoded_query}&resultset=catalog&sort=popular&spp=30&suppressSpellcheck=false"
+    url = f"https://search.wb.ru/exactmatch/ru/common/v7/search?ab_testing=false\
+    &appType=1&curr=rub&dest=-1257786&page=1&query={encoded_query}&resultset=catalog\
+    &sort=popular&spp=30&suppressSpellcheck=false"
 
     params = {
         "ab_testing": "false",
@@ -46,12 +48,12 @@ def search_request(string):
 def data_processor(data, article):
     for index, product in enumerate(data['data']['products']):
         if product['id'] == article:
-            return index + 1 if index < 5000 else None
+            return (index + 1) if index < 5000 else None
     else:
         return None
 
 
-def article_possition(string, article):
+def article_position(string, article):
     response = search_request(string)
     return data_processor(response.json(), article)
 

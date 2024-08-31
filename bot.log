@@ -8,3 +8,13 @@
 2024-08-31 16:20:47,052 - aiogram.dispatcher - INFO - Polling stopped
 2024-08-31 16:20:47,309 - __main__ - INFO - Bot stopped polling
 2024-08-31 16:20:47,311 - aiogram.dispatcher - INFO - Polling stopped for bot @wildberries_rowi_bot id=6710583759 - 'Wildberries bot'
+2024-08-31 16:22:42,871 - __main__ - INFO - Bot started polling
+2024-08-31 16:22:42,872 - aiogram.dispatcher - INFO - Start polling
+2024-08-31 16:22:43,135 - aiogram.dispatcher - INFO - Run polling for bot @wildberries_rowi_bot id=6710583759 - 'Wildberries bot'
+2024-08-31 16:23:06,016 - __main__ - INFO - User 523258119 requested article position
+2024-08-31 16:23:06,291 - aiogram.event - INFO - Update id=526654627 is handled. Duration 282 ms by bot id=6710583759
+2024-08-31 16:23:15,382 - __main__ - INFO - User 523258119 requested article position
+2024-08-31 16:23:15,774 - aiogram.event - INFO - Update id=526654628 is handled. Duration 391 ms by bot id=6710583759
+2024-08-31 16:23:21,265 - aiogram.dispatcher - INFO - Polling stopped
+2024-08-31 16:23:21,522 - __main__ - INFO - Bot stopped polling
+2024-08-31 16:23:21,523 - aiogram.dispatcher - INFO - Polling stopped for bot @wildberries_rowi_bot id=6710583759 - 'Wildberries bot'
